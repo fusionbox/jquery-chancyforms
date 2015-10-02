@@ -1,0 +1,12 @@
+{
+  "env": {
+    "browser": true,
+    "jquery": true
+  },
+  "globals": {
+    "chance": true
+  },
+  "rules": {
+    "quotes": [1, "single", "avoid-escape"]
+  }
+}

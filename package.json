@@ -1,0 +1,20 @@
+{
+  "name": "jquery-chancyforms",
+  "version": "1.0.0",
+  "description": "Fills form fields with random content from chance.js",
+  "main": "jquery-chancyforms.js",
+  "scripts": {
+    "test": "mocha-phantomjs test/test.html",
+    "watch": "nodemon -e js --ignore test/test.bundle.js -x \"npm test\""
+  },
+  "author": "Nolan Stover",
+  "license": "BSD",
+  "devDependencies": {
+    "chai": "^3.2.0",
+    "chance": "^0.7.6",
+    "jquery": "^2.1.4",
+    "mocha-phantomjs": "^3.6.0",
+    "nodemon": "^1.4.1",
+    "phantomjs": "^1.9.7-15"
+  }
+}

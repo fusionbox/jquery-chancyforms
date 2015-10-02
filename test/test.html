@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../node_modules/mocha-phantomjs/node_modules/mocha/mocha.css" />
+    <script src="../node_modules/mocha-phantomjs/node_modules/mocha/mocha.js"></script>
+    <script src="../node_modules/chai/chai.js"></script>
+  </head>
+  <body>
+    <div id="mocha"></div>
+    <script>
+      mocha.ui('bdd');
+      mocha.reporter('html');
+      expect = chai.expect;
+    </script>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/chance/chance.js"></script>
+    <script src="../jquery-chancyforms.js"></script>
+    <script src="test.js"></script>
+    <script>
+      if (typeof window !== 'undefined' && window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.run();
+      }
+    </script>
+  </body>
+</html>
