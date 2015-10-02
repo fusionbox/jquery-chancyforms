@@ -14,7 +14,6 @@ Fills these elements:
 * `<input type="password">`
 * `<input type="radio">`
 * `<input type="range">`
-* `<input type="range">`
 * `<input type="search">`
 * `<input type="tel">`
 * `<input type="text">`
