@@ -51,6 +51,7 @@ Zero or more objects containing options key, value pairs. (See `$.fn.chance.defa
 #### fill
 
 Optional. Can be one of:
+
 1. A function that returns a value
 2. the string name of a `chance` method to call
 3. an array of values to pick from.
@@ -65,7 +66,7 @@ Zero or more arguments to pass to the fill function. Must follow a valid fill pa
 
 __.fill([tempOpts])__
 
-This is the method that actually fills the field elements of the selection with values. If `.chance()` was previously called on the selection, `.fill()` will use the fill method and options defined in that call. If not, each element type comes with a sensible fill method that produces random values to use.
+This is the method that actually fills the field elements of the selection with values. If `.chance()` was previously called on the selection, `.fill()` will use the fill method and options defined in that call. If not, each element type comes with a sensible, default fill method that produces random values to use.
 
 ### Params
 
@@ -76,7 +77,7 @@ Optional object containing temporary options key, value pairs to use only for th
 ## $.fn.chance.defaults
 
 This is an object containing the options key, value pairs that all fill methods use by default.
-Though you can change the values of individual options in this object itself, it is recommended to instead set the value of those options in a .chance() call on a specific selector.
+Though you can change the values of individual options in this object itself, it is recommended to instead overwrite the value of those options in a .chance() call on a specific selector.
 
 ### Properties
 
