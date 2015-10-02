@@ -7,12 +7,8 @@ Fills these elements:
 * `<input type="checkbox">`
 * `<input type="color">`
 * `<input type="date">`
-* `<input type="color">`
-* `<input type="date">`
 * `<input type="datetime-local">`
 * `<input type="email">`
-* `<input type="file">`
-* `<input type="image">`
 * `<input type="month">`
 * `<input type="number">`
 * `<input type="password">`
