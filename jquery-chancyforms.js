@@ -26,9 +26,8 @@
     };
 
     // Helper function to get the set of values on a jQuery object
-    // Acts similar to .map().
     $.fn.values = function() {
-        return this.pushStack($.map(this, function(elem) {
+        return $.map(this, function(elem) {
             var val = $(elem).val();
 
             if ($.type(val) === 'undefined' || val === '') {
@@ -36,7 +35,7 @@
             } else {
                 return val;
             }
-        }));
+        });
     };
 
 
@@ -184,7 +183,7 @@
 
     function getCount(opts) {
         return $.type(opts.count) === 'number' ?
-            opts.count : this.valueSetSelection().values().get().length;
+            opts.count : this.valueSetSelection().values().length;
     }
 
     function getWeight(opts) {
