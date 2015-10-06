@@ -443,4 +443,4 @@
             withOption('overwrite', false, transform.overwrite)
         )]
     ];
-})(jQuery, chance);
+})(window.jQuery, window.chance);
