@@ -3,6 +3,8 @@
 A jQuery plugin that takes the pain out of QA testing html forms. Fill fields, or entire forms of fields with random values.
 Select field elements to fill using jQuery objects. Additionally customize and change the values Chancy Forms uses to fill those elements.
 
+Read [the article](https://www.fusionbox.com/blog/detail/testing-html-forms-is-a-pain-tools-can-help/586/) about why this was created.
+
 Fills these elements:
 * `<input type="checkbox">`
 * `<input type="color">`
