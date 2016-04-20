@@ -340,8 +340,7 @@
             withDefault(function() {
                 var min = parseFloat(this.attr('min')),
                     max = parseFloat(this.attr('max')),
-                    step = parseFloat(this.attr('step')),
-                    values;
+                    step = parseFloat(this.attr('step'));
 
                 if (isNaN(min)) {
                     min = 0;
@@ -356,8 +355,7 @@
                 if (step === 1) {
                     return chance.integer({min: min, max: max});
                 } else {
-                    values = [];
-                    for (var i = min; i < max; i += step) {
+                    for (var i = min, values = []; i < max; i += step) {
                         values.push(i);
                     }
                     return chance.pick(values);
